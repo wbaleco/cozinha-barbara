@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>finalizar pedido</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-button
+    shape="round"
+    color="danger"
+    [routerLink]="['/pedido']"
+    routerdirection="forward"
+  >
+    Adicionar item
+  </ion-button>
+  <ion-button
+    shape="round"
+    color="danger"
+    [routerLink]="['/confirmacao']"
+    routerdirection="forward"
+  >
+    Finalizar pedido
+  </ion-button>
+</ion-content>

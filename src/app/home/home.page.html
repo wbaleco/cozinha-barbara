@@ -11,10 +11,15 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
+  <div class="container">
     <strong>Vamos fazer um pedido?</strong>
-    <h2>Faça login para acessar o sistema</h2>
-    <ion-button [routerLink]="['/login']" routerdirection="forward">
+    <h2>Faça login para acessar o aplicativo</h2>
+    <ion-button
+      shape="round"
+      color="danger"
+      [routerLink]="['/login']"
+      routerdirection="forward"
+    >
       Acessar
     </ion-button>
   </div>

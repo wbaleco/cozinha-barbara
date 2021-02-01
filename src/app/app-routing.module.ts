@@ -15,6 +15,22 @@ const routes: Routes = [
     path: 'login',
     loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   },
+  {
+    path: 'cadastro-usuario',
+    loadChildren: () => import('./cadastro-usuario/cadastro-usuario.module').then( m => m.CadastroUsuarioPageModule)
+  },
+  {
+    path: 'pedido',
+    loadChildren: () => import('./pedido/pedido.module').then( m => m.PedidoPageModule)
+  },
+  {
+    path: 'finalizar-pedido',
+    loadChildren: () => import('./finalizar-pedido/finalizar-pedido.module').then( m => m.FinalizarPedidoPageModule)
+  },
+  {
+    path: 'confirmacao',
+    loadChildren: () => import('./confirmacao/confirmacao.module').then( m => m.ConfirmacaoPageModule)
+  },
 ];
 
 @NgModule({
