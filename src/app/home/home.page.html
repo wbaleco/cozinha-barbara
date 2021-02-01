@@ -1,0 +1,21 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Home</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="container">
+    <strong>Vamos fazer um pedido?</strong>
+    <h2>Faça login para acessar o sistema</h2>
+    <ion-button [routerLink]="['/login']" routerdirection="forward">
+      Acessar
+    </ion-button>
+  </div>
+</ion-content>
