@@ -1,9 +1,25 @@
 .container {
     text-align: center;
-  
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 50%;
-    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+   
+   
+   
   }
+
+  
+
+  .login{
+    min-width: 6.5rem;
+    margin: 150px auto;
+    border: 1px solid #fff;
+    padding: 20px;
+    border-radius: 20px;
+  }
+
+  .espaco{
+    margin-bottom: 20px;
+  }
+
+  
+  

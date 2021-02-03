@@ -1,5 +1,5 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="danger">
     <ion-buttons slot="start">
       <ion-back-button></ion-back-button>
     </ion-buttons>
@@ -7,34 +7,34 @@
   </ion-toolbar>
 </ion-header>
 
-<ion-content>
+<ion-content color="dark">
   <div class="container">
-    <h1>Login</h1>
-
-    <ion-item>
-      <ion-label position="floating">Usuário</ion-label>
-      <ion-input placeholder="Informe seu nome de usuário?"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label position="floating">Senha</ion-label>
-      <ion-input placeholder="Informe sua senha?"></ion-input>
-    </ion-item>
-    <ion-button
-      shape="round"
-      color="danger"
-      [routerLink]="['/pedido']"
-      routerdirection="forward"
-    >
-      Acessar
-    </ion-button>
-    ou
-    <ion-button
-      shape="round"
-      color="danger"
-      [routerLink]="['/cadastro-usuario']"
-      routerdirection="forward"
-    >
-      Cadastre-se
-    </ion-button>
+    <div class="login">
+      <ion-item class="espaco">
+        <ion-label position="floating">Usuário</ion-label>
+        <ion-input placeholder="Informe seu nome de usuário?"></ion-input>
+      </ion-item>
+      <ion-item class="espaco">
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input placeholder="Informe sua senha?"></ion-input>
+      </ion-item>
+      <ion-button
+        shape="round"
+        color="danger"
+        [routerLink]="['/pedido']"
+        routerdirection="forward"
+      >
+        Acessar
+      </ion-button>
+      ou
+      <ion-button
+        shape="round"
+        color="danger"
+        [routerLink]="['/cadastro-usuario']"
+        routerdirection="forward"
+      >
+        Cadastre-se
+      </ion-button>
+    </div>
   </div>
 </ion-content>
